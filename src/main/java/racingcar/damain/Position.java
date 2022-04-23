@@ -18,4 +18,12 @@ public class Position {
             moveForward();
         }
     }
+
+    public String printMonitor() {
+        StringBuffer positionStr = new StringBuffer();
+        for(int i = 0; i < position; i++) {
+            positionStr.append("-");
+        }
+        return positionStr.toString();
+    }
 }
