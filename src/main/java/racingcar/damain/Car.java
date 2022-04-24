@@ -1,5 +1,7 @@
 package racingcar.damain;
 
+import java.util.List;
+
 public class Car implements Comparable<Car>{
     private CarName carName;
     private Position position;
@@ -26,5 +28,11 @@ public class Car implements Comparable<Car>{
 
     public void showRace() {
         System.out.println(carName.getName() + " : " + position.printMonitor());
+    }
+
+    public List<Car> addWinnerCar(List<Car> cars, int position) {
+        if(getPosition() == position)
+            cars.add(this);
+        return cars;
     }
 }

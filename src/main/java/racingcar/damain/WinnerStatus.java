@@ -15,10 +15,6 @@ public class WinnerStatus {
         return winners;
     }
 
-    public void setPositionFirst(int positionFirst) {
-        this.positionFirst = positionFirst;
-    }
-
     public void raceResult(Cars cars) {
         this.positionFirst = Collections.max(cars.getCars()).getPosition();
         winners = cars.getWinners(positionFirst);
