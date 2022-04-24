@@ -21,7 +21,7 @@ class RaceTest {
         carList.add(new Car("good"));
         carList.add(new Car("star"));
         cars = new Cars(carList);
-        race = new Race(cars, 5, new WinnerStatus());
+        race = new Race(cars, new TryoutCount("5"), new WinnerStatus());
     }
 
     @Test
