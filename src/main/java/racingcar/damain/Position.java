@@ -3,6 +3,7 @@ package racingcar.damain;
 import racingcar.utils.PositionRandomUtil;
 
 public class Position {
+
     private int position = 0;
 
     public int getPosition() {
@@ -13,17 +14,15 @@ public class Position {
         position++;
     }
 
-    public void tryoutMove () {
-        if(PositionRandomUtil.tryoutMove()) {
+    public void tryoutMove() {
+        if (PositionRandomUtil.tryoutMove())
             moveForward();
-        }
     }
 
     public String printMonitor() {
         StringBuffer positionStr = new StringBuffer();
-        for(int i = 0; i < position; i++) {
+        for (int i = 0; i < position; i++)
             positionStr.append("-");
-        }
         return positionStr.toString();
     }
 }

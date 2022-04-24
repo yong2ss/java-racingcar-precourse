@@ -4,11 +4,12 @@ import racingcar.error.ErrorMessage;
 import racingcar.utils.ScannerUtil;
 
 public class TryoutCount {
+
     private int tryoutCount;
 
     public TryoutCount(String tryoutCountStr) {
         boolean isValidFail = false;
-        while(!isValidFail) {
+        while (!isValidFail) {
             try {
                 isValidFail = validation(tryoutCountStr);
             } catch (IllegalArgumentException e) {

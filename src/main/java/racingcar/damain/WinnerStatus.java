@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class WinnerStatus {
+
     private List<Car> winners;
     private int positionFirst;
 
@@ -27,10 +28,10 @@ public class WinnerStatus {
 
     private String winnersName() {
         StringBuilder winnersName = new StringBuilder();
-        for(Car car : winners)
+        for (Car car : winners)
             winnersName.append(", " + car.getCarName());
 
-        if(winnersName.length() > 0 && ", ".equals(winnersName.substring(0, 2)))
+        if (winnersName.length() > 0 && ", ".equals(winnersName.substring(0, 2)))
             return winnersName.substring(2);
 
         return winnersName.toString();

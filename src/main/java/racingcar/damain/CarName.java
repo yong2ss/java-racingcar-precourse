@@ -4,11 +4,12 @@ import racingcar.error.ErrorMessage;
 import racingcar.utils.ScannerUtil;
 
 public class CarName {
+
     private String name;
 
     public CarName(String name) {
         boolean isValidFail = false;
-        while(!isValidFail) {
+        while (!isValidFail) {
             try {
                 isValidFail = validation(name);
             } catch (IllegalArgumentException e) {
@@ -25,7 +26,7 @@ public class CarName {
     }
 
     private boolean validation(String name) {
-        if(name.length() > 5)
+        if (name.length() > 5)
             throw new IllegalArgumentException(ErrorMessage.CarNameBussinessError.getErrorMsg());
         return true;
     }

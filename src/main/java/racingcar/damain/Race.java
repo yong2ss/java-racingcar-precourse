@@ -3,6 +3,7 @@ package racingcar.damain;
 import racingcar.utils.ScannerUtil;
 
 public class Race {
+
     private static final String RACE_RESULT_TEXT = "실행 결과";
 
     private Cars cars;
@@ -37,7 +38,7 @@ public class Race {
 
     public void tryoutMove() {
         System.out.println("\n" + RACE_RESULT_TEXT);
-        for(int i = 0; i < tryoutCount.getTryoutCount(); i++) {
+        for (int i = 0; i < tryoutCount.getTryoutCount(); i++) {
             cars.tryOutMove();
             cars.showRace();
             System.out.println();
